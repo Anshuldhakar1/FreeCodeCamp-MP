@@ -1,19 +1,85 @@
-#inp {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
+.roboto {
+	font-family: 'Roboto Slab', serif;
+}
+
+#wrapper {
+	min-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+#editor-wrapper {
+	padding: 2rem;
+  	background: #9B6FDC;
+	position: relative;
+}
+
+#editor {
+  	width: 45vw;
+    height: 70vh;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    resize: none;
+    overflow-y: scroll;
+}
+
+.heading {
+	text-align: center;
+	color: white;
+}
+
+.heading > h2 {
+	margin: 0;
+	margin-bottom: 1rem;
 }
 
 #render-options {
-
+	float: right;
+	margin-top: 1rem;
 }
 
-#checkbox {
+#render-options > * {
+	margin-inline: .5rem;
+}
 
+#checkbox > input {
+	cursor: pointer;
+}
+
+#checkbox > span {
+	display: inline-block;
+	margin-left: .35rem;
+}
+ 
+#clear-btn {
+	color: black;
+	padding: .2rem .5rem;
+	display: inline-grid;
+	place-items: center;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	font-size: 0.95rem;
+	background: white;
 }
 
 #render-btn {
-
+	color: black;
+	padding: .2rem .5rem;
+	display: inline-grid;
+	place-items: center;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	font-size: 0.95rem;
+	background: white;
 }
 
-#out {
-  
+#preview-wrapper {
+	margin: 1rem;
+	padding: 1rem;
+	overflow-y: scroll;
 }
